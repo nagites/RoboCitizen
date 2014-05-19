@@ -1,0 +1,12 @@
+<h4 style="text-decoration:underline">Nebraska Legislators</h4>
+<% @nebraska_arr.each do |pol| %>
+	<ul>
+		<h5><li><%= "#{pol.first_name} #{pol.last_name} (#{pol.party})" %></li></h5>
+		<% if pol.twitter_id == nil %>
+			<ul>
+		<% else %>
+			<ul><li>Twitter Handle: <%= "@#{pol.twitter_id}" %></li>
+		<% end %>
+		<li>Phone: <%= "#{pol.phone}" %></li></ul>
+	</ul>
+<% end %>
