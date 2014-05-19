@@ -1,4 +1,39 @@
  body { 
  	padding-top: 50px;
- 	margin-left: 22px; 
- }
+ 	padding-bottom: 70px; 
+}
+#state_links {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.navbar-fixed-bottom {
+	height: 30px;
+}
+
+#navright_links {
+	margin-right: 20px;
+}
+#footer_links {
+	text-decoration: underline;
+}
+
+.notice {
+	color: green;
+	text-align: center;
+}
+
+.well {
+	padding-top: 0px;
+	padding-bottom: 10px;
+	margin-right: auto;
+	margin-right: auto;
+}
+
+#legislator_list {
+	margin: auto;
+}
+
+#site_links a {
+	font-size: 11px;
+}

@@ -1,49 +1,35 @@
-<h2>United States Legislators</h2>
-<hr>
-<%= render 'home/states/alabama' %>
-<%= render 'home/states/alaska' %>
-<%= render 'home/states/arkansas' %>
-<%= render 'home/states/arizona' %>
-<%= render 'home/states/california' %>
-<%= render 'home/states/colorado' %>
-<%= render 'home/states/connecticut' %>
-<%= render 'home/states/delaware' %>
-<%= render 'home/states/florida' %>
-<%= render 'home/states/georgia' %>
-<%= render 'home/states/hawaii' %>
-<%= render 'home/states/indiana' %>
-<%= render 'home/states/iowa' %>
-<%= render 'home/states/kansas' %>
-<%= render 'home/states/kentucky' %>
-<%= render 'home/states/louisiana' %>
-<%= render 'home/states/maine' %>
-<%= render 'home/states/maryland' %>
-<%= render 'home/states/massachussetts' %>
-<%= render 'home/states/michigan' %>
-<%= render 'home/states/minnesota' %>
-<%= render 'home/states/mississippi' %>
-<%= render 'home/states/missouri' %>
-<%= render 'home/states/montana' %>
-<%= render 'home/states/nebraska' %>
-<%= render 'home/states/nevada' %>
-<%= render 'home/states/newhampshire' %>
-<%= render 'home/states/newjersey' %>
-<%= render 'home/states/newmexico' %>
-<%= render 'home/states/newyork' %>
-<%= render 'home/states/northcarolina' %>
-<%= render 'home/states/northdakota' %>
-<%= render 'home/states/ohio' %>
-<%= render 'home/states/oklahoma' %>
-<%= render 'home/states/oregon' %>
-<%= render 'home/states/pennsylvania' %>
-<%= render 'home/states/rhodeisland' %>
-<%= render 'home/states/southcarolina' %>
-<%= render 'home/states/tennessee' %>
-<%= render 'home/states/texas' %>
-<%= render 'home/states/utah' %>
-<%= render 'home/states/vermont' %>
-<%= render 'home/states/virginia' %>
-<%= render 'home/states/washington' %>
-<%= render 'home/states/westvirginia' %>
-<%= render 'home/states/wisconsin' %>
-<%= render 'home/states/wyoming' %>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="col-md-12">
+			<div class="row-fluid">
+				<div class="col-md-8">
+					<div class="well" id="site_links">
+						<%= render 'home/by_state_links' %>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="well">
+								<div class="row">
+									<div class="col-md-12">
+										<%= render 'home/search_by_links' %>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="col-md-12">
+							<div class="well" id="legislators_div">
+								<%= render 'home/legislators_div' %>
+							</div>
+						</div>
+					</div>
+					<br />
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="well" id="legislator_list">
+					<%= render 'home/about_robo_citizen' %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
