@@ -37,3 +37,10 @@
 #site_links a {
 	font-size: 11px;
 }
+
+hr {
+	
+	color: #333; //old IE
+    background-color: #333; //Modern Browsers
+	height: 1px;
+}
