@@ -1,6 +1,6 @@
-## README
+# README
 
-##### RoboCitizen is a tool to empower people with seamless and free access to their legislators
+#### RoboCitizen is a tool to empower people with seamless and free access to their legislators
 Contact your congress-people and senate members with custom messages and tweets whenever you want!
 ***
 
