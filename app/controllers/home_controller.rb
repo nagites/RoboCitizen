@@ -4,12 +4,34 @@ require "modules/sunlight_setup"
 class HomeController < ApplicationController
   include SunlightSetup
   before_action :setup
+  helper_method :rpath_to_state
 
   ################################################################
   public
   
   def index
   end
+
+  def rpath_to_state
+    rpath_edges
+  end
+
+  def rpath_edges
+    rpath = request.path.gsub(/\/home\//, '').titleize
+    rpath = 'New Hampshire' if rpath == 'Newhampshire'
+    rpath = 'New Jersey' if rpath == 'Newjersey'
+    rpath = 'New Mexico' if rpath == 'Newmexico'
+    rpath = 'New York' if rpath == 'Newyork'
+    rpath = 'North Carolina' if rpath == 'Northcarolina'
+    rpath = 'North Dakota' if rpath == 'Northdakota'
+    rpath = 'Rhode Island' if rpath == 'Rhodeisland'
+    rpath = 'South Carolina' if rpath == 'Southcarolina'
+    rpath = 'West Virginia' if rpath == 'Westvirginia'
+    state_arr = @legislators.select { |var| var.state_name =~ /#{rpath}/ }
+    state_arr.first.state_name
+  end
+
+
   def alabama
     partialrend("alabama")
   end

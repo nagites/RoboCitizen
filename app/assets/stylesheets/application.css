@@ -15,8 +15,8 @@
  */
 
   body { 
- 	padding-top: 50px;
- 	padding-bottom: 70px; 
+ 	padding-top: 48px;
+ 	padding-bottom: 28px; 
 }
 #state_links {
 	margin-left: 30px;
@@ -24,7 +24,7 @@
 }
 
 .navbar-fixed-bottom {
-	height: 30px;
+	height: 24px;
 }
 
 #navright_links {
@@ -32,6 +32,12 @@
 }
 #footer_links {
 	text-decoration: underline;
+}
+#footer_nav_links {
+	margin-right: 20px;
+}
+#about_rc_well {
+	margin-bottom: 40px;
 }
 
 .notice {
@@ -51,7 +57,11 @@
 }
 
 #site_links a {
-	font-size: 11px;
+	font-size: 14px;
+}
+
+#site_links {
+	text-align: center;
 }
 
 hr {
