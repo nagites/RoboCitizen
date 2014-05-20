@@ -1,5 +1,24 @@
 <div class="well" id="legislator_list">
 	<% rpath = request.path.gsub(/\/home\//, '').titleize %>
+	<% if rpath == 'Newhampshire' %>
+		<% rpath = 'New Hampshire' %>
+	<% elsif rpath == 'Newjersey' %>
+		<% rpath = 'New Jersey' %>
+	<% elsif rpath == 'Newmexico' %>
+		<% rpath = 'New Mexico' %>
+	<% elsif rpath == 'Newyork' %>
+		<% rpath = 'New York' %>
+	<% elsif rpath == 'Northcarolina' %>
+		<% rpath = 'North Carolina' %>
+	<% elsif rpath == 'Northdakota' %>
+		<% rpath = 'North Dakota' %>
+	<% elsif rpath == 'Rhodeisland' %>
+		<% rpath = 'Rhode Island' %>
+	<% elsif rpath == 'Southcarolina' %>
+		<% rpath = 'South Carolina' %>
+	<% elsif rpath == 'Westvirginia' %>
+		<% rpath = 'West Virginia' %>
+	<% end %>
 	<% state_arr = @legislators.select { |var| var.state_name =~ /#{rpath}/ } %>
 	<h3><%= state_arr.first.state_name %></h3>
 </div>
