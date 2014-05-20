@@ -4,13 +4,10 @@
 Contact your congress-people and senate members with custom messages and tweets whenever you want!
 ***
 
-Search by state, party, gender, or cause
-
-Choose a legislator you want to contact
-
-Write a message or tweet to the legislator
-
-Click 'Call Phone' or 'Send Tweet'
+1. Search by state, party, gender, or cause
+2. Choose a legislator you want to contact
+3. Write a message or tweet to the legislator
+4. Click 'Call Phone' or 'Send Tweet'
 
 Your message will automatically be spoken to the legislator when he or she answers the phone 
 
