@@ -1,5 +1,5 @@
-<h4 style="text-decoration:underline">Massachussetts Legislators</h4>
-<% @massachussetts_arr.each do |pol| %>
+<h4 style="text-decoration:underline">Massachusetts Legislators</h4>
+<% @massachusetts_arr.each do |pol| %>
 	<ul>
 		<h5><li><%= "#{pol.first_name} #{pol.last_name} (#{pol.party})" %></li></h5>
 		<% if pol.twitter_id == nil %>

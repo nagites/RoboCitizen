@@ -48,7 +48,7 @@ module SunlightSetup
       louisiana_arr:      "LA",
       maine_arr:          "ME",
       maryland_arr:       "MD",
-      massachussetts_arr: "MA",
+      massachusetts_arr: "MA",
       michigan_arr:       "MI",
       minnesota_arr:      "MN",
       mississippi_arr:    "MS",

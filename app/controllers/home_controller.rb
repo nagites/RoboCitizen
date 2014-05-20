@@ -17,7 +17,7 @@ class HomeController < ApplicationController
   end
 
   def rpath_edges
-    rpath = request.path.gsub(/\/home\//, '').titleize
+    rpath = request.path.gsub(/\/home\//, '').capitalize
     rpath = 'New Hampshire' if rpath == 'Newhampshire'
     rpath = 'New Jersey' if rpath == 'Newjersey'
     rpath = 'New Mexico' if rpath == 'Newmexico'
@@ -27,7 +27,7 @@ class HomeController < ApplicationController
     rpath = 'Rhode Island' if rpath == 'Rhodeisland'
     rpath = 'South Carolina' if rpath == 'Southcarolina'
     rpath = 'West Virginia' if rpath == 'Westvirginia'
-    state_arr = @legislators.select { |var| var.state_name =~ /#{rpath}/ }
+    state_arr = @legislators.select { |var| var.state_name == "#{rpath}" }
     state_arr.first.state_name
   end
 
@@ -86,8 +86,8 @@ class HomeController < ApplicationController
   def maryland
     partialrend("maryland")
   end
-  def massachussetts
-    partialrend("massachussetts")
+  def massachusetts
+    partialrend("massachusetts")
   end
   def michigan
     partialrend("michigan")

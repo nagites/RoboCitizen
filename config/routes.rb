@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'home/louisiana' => 'home#louisiana'
   get 'home/maine' => 'home#maine'
   get 'home/maryland' => 'home#maryland'
-  get 'home/massachussetts' => 'home#massachussetts'
+  get 'home/massachusetts' => 'home#massachusetts'
   get 'home/michigan' => 'home#michigan'
   get 'home/minnesota' => 'home#minnesota'
   get 'home/mississippi' => 'home#mississippi'
