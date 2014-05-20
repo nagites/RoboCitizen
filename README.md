@@ -9,9 +9,7 @@ Contact your congress-people and senate members with custom messages and tweets 
 3. Write a message or tweet to the legislator
 4. Click 'Call Phone' or 'Send Tweet'
 
-Your message will automatically be spoken to the legislator when he or she answers the phone 
-
-Or, if you choose, your message will be tweeted to the legislator's Twitter profile 
+Your message will automatically be spoken to the legislator when he or she answers the phone. Or, if you choose, your message will be tweeted to the legislator's Twitter profile 
 
 ##### Get Involved in Politics || Make the World Awesome || Use Technology to Form a Better Society
 
