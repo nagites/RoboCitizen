@@ -3,4 +3,3 @@
 	<% state_arr = @legislators.select { |var| var.state_name =~ /#{rpath}/ } %>
 	<h3><%= state_arr.first.state_name %></h3>
 </div>
-
