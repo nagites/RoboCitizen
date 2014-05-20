@@ -19,3 +19,7 @@ Your message will automatically be spoken to the legislator when he or she answe
 ***
 
 #### Contribute to RoboCitizen
+
+1. Fork RoboCitizen
+2. Do something useful
+3. Submit a pull request
