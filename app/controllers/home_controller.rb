@@ -1,5 +1,5 @@
-require 'sunlight/congress'
-require 'modules/sunlight_setup'
+require "sunlight/congress"
+require "modules/sunlight_setup"
 
 class HomeController < ApplicationController
   include SunlightSetup
@@ -10,149 +10,155 @@ class HomeController < ApplicationController
   
   def index
   end
-
   def alabama
-    render 'home/states/_alabama'
+    partialrend("alabama")
   end
   def alaska
-    render 'home/states/_alaska'
+    partialrend("alaska")
   end
   def arkansas
-    render 'home/states/_arkansas'
+    partialrend("arkansas")
   end
   def arizona
-    render 'home/states/_arizona'
+    partialrend("arizona")
   end
   def california
-    render 'home/states/_california'
+    partialrend("california")
   end
   def colorado
-    render 'home/states/_colorado'
+    partialrend("colorado")
   end
   def connecticut
-    render 'home/states/_connecticut'
+    partialrend("connecticut")
   end
   def delaware
-    render 'home/states/_delaware'
+    partialrend("delaware")
   end
   def florida
-    render 'home/states/_florida'
+    partialrend("florida")
   end
   def georgia
-    render 'home/states/_georgia'
+    partialrend("georgia")
   end
   def hawaii
-    render 'home/states/_hawaii'
+    partialrend("hawaii")
   end
   def indiana
-    render 'home/states/_indiana'
+    partialrend("indiana")
   end
   def iowa
-    render 'home/states/_iowa'
+    partialrend("iowa")
   end
   def kansas
-    render 'home/states/_kansas'
+    partialrend("kansas")
   end
   def kentucky
-    render 'home/states/_kentucky'
+    partialrend("kentucky")
   end
   def louisiana
-    render 'home/states/_louisiana'
+    partialrend("louisiana")
   end
   def maine
-    render 'home/states/_maine'
+    partialrend("maine")
   end
   def maryland
-    render 'home/states/_maryland'
+    partialrend("maryland")
   end
   def massachussetts
-    render 'home/states/_massachussetts'
+    partialrend("massachussetts")
   end
   def michigan
-    render 'home/states/_michigan'
+    partialrend("michigan")
   end
   def minnesota
-    render 'home/states/_minnesota'
+    partialrend("minnesota")
   end
   def mississippi
-    render 'home/states/_mississippi'
+    partialrend("mississippi")
   end
   def missouri
-    render 'home/states/_missouri'
+    partialrend("missouri")
   end
   def montana
-    render 'home/states/_montana'
+    partialrend("montana")
   end
   def nebraska
-    render 'home/states/_nebraska'
+    partialrend("nebraska")
   end
   def nevada
-    render 'home/states/_nevada'
+    partialrend("nevada")
   end
   def newhampshire
-    render 'home/states/_newhampshire'
+    partialrend("newhampshire")
   end
   def newjersey
-    render 'home/states/_newjersey'
+    partialrend("newjersey")
   end
   def newmexico
-    render 'home/states/_newmexico'
+    partialrend("newmexico")
   end
   def newyork
-    render 'home/states/_newyork'
+    partialrend("newyork")
   end
   def northcarolina
-    render 'home/states/_northcarolina'
+    partialrend("northcarolina")
   end
   def northdakota
-    render 'home/states/_northdakota'
+    partialrend("northdakota")
   end
   def ohio
-    render 'home/states/_ohio'
+    partialrend("ohio")
   end
   def oklahoma
-    render 'home/states/_oklahoma'
+    partialrend("oklahoma")
   end
   def oregon
-    render 'home/states/_oregon'
+    partialrend("oregon")
   end
   def pennsylvania
-    render 'home/states/_pennsylvania'
+    partialrend("pennsylvania")
   end
   def rhodeisland
-    render 'home/states/_rhodeisland'
+    partialrend("rhodeisland")
   end
   def southcarolina
-    render 'home/states/_southcarolina'
+    partialrend("southcarolina")
   end
   def tennessee
-    render 'home/states/_tennessee'
+    partialrend("tennessee")
   end
   def texas
-    render 'home/states/_texas'
+    partialrend("texas")
   end
   def utah
-    render 'home/states/_utah'
+    partialrend("utah")
   end
   def vermont
-    render 'home/states/_vermont'
+    partialrend("vermont")
   end
   def virginia
-    render 'home/states/_virginia'
+    partialrend("virginia")
   end
   def washington
-    render 'home/states/_washington'
+    partialrend("washington")
   end
   def westvirginia
-    render 'home/states/_westvirginia'
+    partialrend("westvirginia")
   end
   def wisconsin
-    render 'home/states/_wisconsin'
+    partialrend("wisconsin")
   end
   def wyoming
-    render 'home/states/_wyoming'
+    partialrend("wyoming")
   end
-  ################################################################
 
+  ################################################################
+  private
+
+  def partialrend(st)
+    render partial: "home/states/#{st}", layout: 'layouts/state_template'
+  end
+
+  ################################################################
 end
 
