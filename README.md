@@ -13,7 +13,7 @@ Your message will automatically be spoken to the legislator when he or she answe
 
 Or, if you choose, your message will be tweeted to the legislator's Twitter profile 
 
-|| Get Involved in Politics || Make the World Awesome || Use Technology to Form a Better Society ||
+## Get Involved in Politics || Make the World Awesome || Use Technology to Form a Better Society
 
 * Clark
 
