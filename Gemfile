@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '4.1.0'
-gem 'sqlite3'
+gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -14,4 +14,3 @@ gem 'sunlight-congress', git: 'git@github.com:steveklabnik/sunlight-congress.git
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
 # gem 'debugger', group: [:development, :test]
-
