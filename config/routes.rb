@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  
+  get 'home/male' => 'home#male_list_render'
+  get 'home/female' => 'home#female_list_render'
+
   get 'home/alabama' => 'home#alabama'
   get 'home/alaska' => 'home#alaska'
   get 'home/arkansas' => 'home#arkansas'

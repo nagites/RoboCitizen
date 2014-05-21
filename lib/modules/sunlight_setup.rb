@@ -86,4 +86,5 @@ module SunlightSetup
     @state_vars.each { |k, v| instance_variable_set("@#{k}", find_st_legislators(v)) }
   end
 
+################################################################
 end

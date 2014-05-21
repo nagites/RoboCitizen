@@ -1,186 +1,221 @@
-require "sunlight/congress"
-require "modules/sunlight_setup"
+require 'sunlight/congress'
+require 'modules/sunlight_setup'
+require 'modules/req_path'
+require 'modules/find_by_gender_module'
+require 'modules/render_partial_module'
 
 class HomeController < ApplicationController
   include SunlightSetup
-  before_action :setup
-  helper_method :rpath_to_state
+  include ReqPath
+  include FindByGenderModule
+  include RenderPartialModule
+
+  before_action :setup # from SunlightSetup module
+  helper_method :req_path_final, :male_leg_arr, :female_leg_arr
 
   ################################################################
   public
   
   def index
+    # render home/index.html.erb
   end
-
-  def rpath_to_state
-    rpath_edges
-  end
-
-  def rpath_edges
-    rpath = request.path.gsub(/\/home\//, '').capitalize
-    rpath = 'New Hampshire' if rpath == 'Newhampshire'
-    rpath = 'New Jersey' if rpath == 'Newjersey'
-    rpath = 'New Mexico' if rpath == 'Newmexico'
-    rpath = 'New York' if rpath == 'Newyork'
-    rpath = 'North Carolina' if rpath == 'Northcarolina'
-    rpath = 'North Dakota' if rpath == 'Northdakota'
-    rpath = 'Rhode Island' if rpath == 'Rhodeisland'
-    rpath = 'South Carolina' if rpath == 'Southcarolina'
-    rpath = 'West Virginia' if rpath == 'Westvirginia'
-    state_arr = @legislators.select { |var| var.state_name == "#{rpath}" }
-    state_arr.first.state_name
-  end
-
 
   def alabama
-    partialrend("alabama")
+    render_partial("alabama", "state")
   end
+
   def alaska
-    partialrend("alaska")
+    render_partial("alaska", "state")
   end
+
   def arkansas
-    partialrend("arkansas")
+    render_partial("arkansas", "state")
   end
+
   def arizona
-    partialrend("arizona")
+    render_partial("arizona", "state")
   end
+
   def california
-    partialrend("california")
+    render_partial("california", "state")
   end
+
   def colorado
-    partialrend("colorado")
+    render_partial("colorado", "state")
   end
+
   def connecticut
-    partialrend("connecticut")
+    render_partial("connecticut", "state")
   end
+
   def delaware
-    partialrend("delaware")
+    render_partial("delaware", "state")
   end
+
   def florida
-    partialrend("florida")
+    render_partial("florida", "state")
   end
+
   def georgia
-    partialrend("georgia")
+    render_partial("georgia", "state")
   end
+
   def hawaii
-    partialrend("hawaii")
+    render_partial("hawaii", "state")
   end
+
   def indiana
-    partialrend("indiana")
+    render_partial("indiana", "state")
   end
+
   def iowa
-    partialrend("iowa")
+    render_partial("iowa", "state")
   end
+
   def kansas
-    partialrend("kansas")
+    render_partial("kansas", "state")
   end
+
   def kentucky
-    partialrend("kentucky")
+    render_partial("kentucky", "state")
   end
+
   def louisiana
-    partialrend("louisiana")
+    render_partial("louisiana", "state")
   end
+
   def maine
-    partialrend("maine")
+    render_partial("maine", "state")
   end
+
   def maryland
-    partialrend("maryland")
+    render_partial("maryland", "state")
   end
+
   def massachusetts
-    partialrend("massachusetts")
+    render_partial("massachusetts", "state")
   end
+
   def michigan
-    partialrend("michigan")
+    render_partial("michigan", "state")
   end
+
   def minnesota
-    partialrend("minnesota")
+    render_partial("minnesota", "state")
   end
+
   def mississippi
-    partialrend("mississippi")
+    render_partial("mississippi", "state")
   end
+
   def missouri
-    partialrend("missouri")
+    render_partial("missouri", "state")
   end
+
   def montana
-    partialrend("montana")
+    render_partial("montana", "state")
   end
+
   def nebraska
-    partialrend("nebraska")
+    render_partial("nebraska", "state")
   end
+
   def nevada
-    partialrend("nevada")
+    render_partial("nevada", "state")
   end
+
   def newhampshire
-    partialrend("newhampshire")
+    render_partial("newhampshire", "state")
   end
+
   def newjersey
-    partialrend("newjersey")
+    render_partial("newjersey", "state")
   end
+
   def newmexico
-    partialrend("newmexico")
+    render_partial("newmexico", "state")
   end
+
   def newyork
-    partialrend("newyork")
+    render_partial("newyork", "state")
   end
+
   def northcarolina
-    partialrend("northcarolina")
+    render_partial("northcarolina", "state")
   end
+
   def northdakota
-    partialrend("northdakota")
+    render_partial("northdakota", "state")
   end
+
   def ohio
-    partialrend("ohio")
+    render_partial("ohio", "state")
   end
+
   def oklahoma
-    partialrend("oklahoma")
+    render_partial("oklahoma", "state")
   end
+
   def oregon
-    partialrend("oregon")
+    render_partial("oregon", "state")
   end
+
   def pennsylvania
-    partialrend("pennsylvania")
+    render_partial("pennsylvania", "state")
   end
+
   def rhodeisland
-    partialrend("rhodeisland")
+    render_partial("rhodeisland", "state")
   end
+
   def southcarolina
-    partialrend("southcarolina")
+    render_partial("southcarolina", "state")
   end
+
   def tennessee
-    partialrend("tennessee")
+    render_partial("tennessee", "state")
   end
+
   def texas
-    partialrend("texas")
+    render_partial("texas", "state")
   end
+
   def utah
-    partialrend("utah")
+    render_partial("utah", "state")
   end
+
   def vermont
-    partialrend("vermont")
+    render_partial("vermont", "state")
   end
+
   def virginia
-    partialrend("virginia")
+    render_partial("virginia", "state")
   end
+
   def washington
-    partialrend("washington")
+    render_partial("washington", "state")
   end
+
   def westvirginia
-    partialrend("westvirginia")
+    render_partial("westvirginia", "state")
   end
+
   def wisconsin
-    partialrend("wisconsin")
+    render_partial("wisconsin", "state")
   end
+
   def wyoming
-    partialrend("wyoming")
+    render_partial("wyoming", "state")
+  end
+
+  def female_list_render
+    render_partial("female", "gender", "partials")
+  end
+
+  def male_list_render
+    render_partial("male", "gender", "partials")
   end
 
   ################################################################
-  private
 
-  def partialrend(st)
-    render partial: "home/states/#{st}", layout: 'layouts/state_template'
-  end
-
-  ################################################################
 end
-
