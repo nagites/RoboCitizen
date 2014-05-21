@@ -25,7 +25,10 @@ hr {
 // ID Selectors //
 #navright_links { margin-right: 20px; }
 #footer_links { text-decoration: underline; }
-#legislator_list { margin: auto; }
+#legislator_list { 
+	margin: auto;
+	padding-top: 10px;
+ }
 #site_links a { font-size: 11px; }
 #state_sidebar_profile { padding-top: 10px; }
 #state_links {

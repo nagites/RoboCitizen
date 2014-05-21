@@ -1,5 +1,15 @@
-<h4 style="text-decoration:underline">Male Legislators</h4>
+<%= button_to 'See Female Legislators', female_path, class: 'btn btn-primary pull-right', method: 'get' %>
+
+<h2 style="text-decoration:underline">Male Legislators</h2>
 
 <% male_leg_arr.each do |male| %>
-	<li><%= "#{male.first_name} #{male.last_name}" %></li>
+<ul>
+	<h5><li><%= "#{male.first_name} #{male.last_name} (#{male.party})" %></li></h5>
+	<% if male.twitter_id == nil %>
+		<ul><li>No Twitter Handle</li>
+	<% else %>
+		<ul><li>Twitter Handle: <%= "@#{male.twitter_id}" %></li>
+	<% end %>
+			<li>Phone: <%= "#{male.phone}" %></li></ul>
+		</ul>
 <% end %>
