@@ -11,4 +11,5 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'sunlight-congress', git: 'git://github.com/steveklabnik/sunlight-congress.git'
 gem 'rails_12factor'
+gem 'unicorn'
 ruby '2.1.1'
