@@ -14,3 +14,4 @@ gem 'sunlight-congress', git: 'git://github.com/steveklabnik/sunlight-congress.g
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
 # gem 'debugger', group: [:development, :test]
+ruby '2.1.1'
