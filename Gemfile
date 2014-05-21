@@ -9,7 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
-gem 'sunlight-congress', git: 'git@github.com:steveklabnik/sunlight-congress.git'
+gem 'sunlight-congress', git: 'git://github.com/steveklabnik/sunlight-congress.git'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development

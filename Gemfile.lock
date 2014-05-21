@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:steveklabnik/sunlight-congress.git
+  remote: git://github.com/steveklabnik/sunlight-congress.git
   revision: a2da68e74318d0a13a5ffc73195943389c7fba8b
   specs:
     sunlight-congress (1.1.0)
