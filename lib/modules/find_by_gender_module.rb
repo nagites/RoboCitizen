@@ -1,5 +1,4 @@
  module FindByGenderModule
-  require 'modules/sunlight_setup'
 
   def female_leg_arr
     female_arr = @legislators.select { |var| var.gender == "F" }

@@ -1,8 +1,7 @@
 module ReqPath
-  require 'modules/sunlight_setup'
-
+  
   def req_path
-    request.path.gsub(/\/home\//, '').capitalize
+    request.path.gsub(/\//, '').capitalize
   end
 
   def req_path_edges
