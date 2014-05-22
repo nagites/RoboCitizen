@@ -1,0 +1,20 @@
+<%= render template: "layouts/global/application" %>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="well" id="legislator_list">
+						<%= yield %>
+					</div>
+				</div>
+			</div>
+			<br />	
+		</div>
+	</div>
+	<div class="col-md-4">
+		<%= render 'home/partials/party_sidebar' %>
+		<br />
+		<%= render 'home/partials/about_robo_citizen' %>
+	</div>
+</div>

@@ -1,0 +1,14 @@
+<%= button_to 'See Democrat Legislators', democrat_path, class: 'btn btn-primary pull-right', method: 'get' %>
+<h2 style="text-decoration:underline">Republican Legislators</h2>
+
+<% republican_arr.each do |repub| %>
+<ul>
+	<h5><li><%= "#{repub.first_name} #{repub.last_name} (#{repub.party})" %></li></h5>
+	<% if repub.twitter_id == nil %>
+		<ul><li>No Twitter Handle</li>
+	<% else %>
+		<ul><li>Twitter Handle: <%= "@#{repub.twitter_id}" %></li>
+	<% end %>
+			<li>Phone: <%= "#{repub.phone}" %></li></ul>
+		</ul>
+<% end %>

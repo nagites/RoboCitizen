@@ -1,0 +1,21 @@
+$(document).ready(function(){
+	
+	// Toggle Text Section //
+	$.fn.extend({
+		toggleHTML:function(a,b){
+			if(this.html()==a){this.html(b)}
+				else{this.html(a)}
+			}
+	});
+	$(this).on('click', '#see_hide_toggle', function(e) {
+		e.preventDefault();
+		$(this).toggleHTML("Show All Legislators", "Hide Legislators");
+	});
+
+	var loadingText = "... LOADING ...";
+
+	$(this).on('click', 'a:not(#ddexception), .btn:not(#see_hide_toggle)', function(e) {
+		$('#spinnerid').toggleHTML("RoboCitizen", loadingText);
+	});
+
+});

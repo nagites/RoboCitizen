@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
 
   root "home#index"
+
+  get 'about' => 'home#about'
   
   get 'male' => 'home#male_list_render'
   get 'female' => 'home#female_list_render'
+
+  get 'democrat' => 'home#democrat_list_render'
+  get 'republican' => 'home#republican_list_render'
 
   get 'alabama' => 'home#alabama'
   get 'alaska' => 'home#alaska'
