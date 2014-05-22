@@ -19,6 +19,10 @@ class HomeController < ApplicationController
   end
 
   def about
-    
+    # render home/about.html.erb
+  end
+
+  def state_list
+    # render home/state_list.html.erb
   end
 end

@@ -72,3 +72,4 @@ hr {
     background-color: #333; //Modern Browsers
 	height: 1px;
 }
+a { cursor: pointer; }

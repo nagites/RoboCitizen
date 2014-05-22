@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "home#index"
 
   get 'about' => 'home#about'
+  get 'state-list' => 'home#state_list'
   
   get 'male' => 'home#male_list_render'
   get 'female' => 'home#female_list_render'
