@@ -15,7 +15,7 @@
  */
  body { 
  	padding-top: 45px;
- 	padding-bottom: 58px; 
+ 	padding-bottom: 50px; 
  }
  #state_links {
  	margin-left: 30px;
@@ -81,3 +81,9 @@
  	margin-left: 85px;
 
  }
+ @media (max-width: 768px) { 
+ 	#footer {
+ 		visibility: hidden;
+ 	}
+ }
+

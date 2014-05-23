@@ -34,4 +34,5 @@ $(document).ready(function(){
 // <INSERT NAME HERE> Event Handling //
 $(document).ready(function(){	
 	// Stub Method
+	
 });
