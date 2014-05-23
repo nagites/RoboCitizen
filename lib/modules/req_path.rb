@@ -16,6 +16,8 @@ module ReqPath
     req_path_e = 'West Virginia' if req_path == 'Westvirginia'
     req_path_e = 'Democrats' if req_path == 'Democrat'
     req_path_e = 'Republicans' if req_path == 'Republican'
+    req_path_e = 'Male Legislators' if req_path == 'Male'
+    req_path_e = 'Female Legislators' if req_path == 'Female'
     req_path_e || nil
   end
 
@@ -29,6 +31,10 @@ module ReqPath
       'Democrats'
     elsif req_path_frozen == 'Republicans'
       'Republicans'
+    elsif req_path_frozen == 'Male Legislators'
+      'Male Legislators'
+    elsif req_path_frozen == 'Female Legislators'
+      'Female Legislators'
     else
       state_arr = @legislators.select { |var| var.state_name == "#{req_path_frozen}" }
       state_arr.first.state_name

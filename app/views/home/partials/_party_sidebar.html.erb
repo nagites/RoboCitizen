@@ -1,3 +1,8 @@
 <div class="well" id="party_sidebar_profile">
 	<h1 style="text-align: center"><%= req_path_final %></h1>
+	<% if req_path_final == 'Democrats' %>
+		<%= render 'home/partials/democrat_sidebar' %>
+	<% elsif req_path_final == 'Republicans' %>
+		<%= render 'home/partials/republican_sidebar' %>
+	<% end %>
 </div>
