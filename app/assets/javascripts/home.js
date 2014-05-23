@@ -25,6 +25,10 @@ $(document).ready(function(){
 		e.preventDefault();
 		$(this).toggleHTML("Show All Legislators", "Hide Legislators");
 	});
+	// Toggle HTML -- Plus/Minus Sign Display //
+	$(this).on('click', '#stateid', function(e) {
+		$('#togglesign', this).toggleHTML("+", "-");
+	});
 });
 
 // <INSERT NAME HERE> Event Handling //
