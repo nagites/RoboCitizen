@@ -25,4 +25,9 @@ class HomeController < ApplicationController
   def state_list
     # render home/state_list.html.erb
   end
+
+  def legal
+    # render home/legal.html.erb
+  end
+
 end
