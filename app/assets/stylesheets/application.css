@@ -86,4 +86,8 @@
  		visibility: hidden;
  	}
  }
+ #bs-example-navbar-collapse-1 {
+
+ 	max-height: 20%;
+ }
 
