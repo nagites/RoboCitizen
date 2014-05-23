@@ -3,11 +3,18 @@
 	<br />
 	<div class="row-fluid">
 		<div class="col-md-8">
+			<%= render 'home/partials/state_header' %>
+		</div>
+		<div class="col-md-4">
+			<div class="well" id="legislator_list">
+				<%= render 'home/partials/active_pols_per_state' %>
+			</div>
+			<br />
+		</div>
+		<div class="col-md-8">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="well" id="legislator_list">
-						<h1 style="text-align: center"><%= req_path_final %></h1>
-						<hr>
 						<%= yield %>
 					</div>
 				</div>
@@ -16,8 +23,6 @@
 		</div>
 	</div>
 	<div class="col-md-4">
-		<%= render 'home/partials/state_sidebar' %>
-		<br />
 		<%= render 'home/partials/about_robo_citizen' %>
 	</div>
 </div>
