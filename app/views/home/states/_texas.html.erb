@@ -1,7 +1,7 @@
 <h4 style="text-decoration:underline">Texas Legislators</h4>
 <% @texas_arr.each do |pol| %>
 	<ul>
-		<h5><li><%= "#{pol.first_name} #{pol.last_name} (#{pol.party})" %></li></h5>
+		<h5><li><%= "#{pol.first_name} #{pol.last_name} (#{pol.party} - #{pol.chamber.capitalize})" %></li></h5>
 		<% if pol.twitter_id == nil %>
 			<ul>
 		<% else %>

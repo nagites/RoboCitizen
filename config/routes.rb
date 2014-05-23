@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get 'democrat' => 'home#democrat_list_render'
   get 'republican' => 'home#republican_list_render'
 
+  get 'senate' => 'home#senate_list_render'
+  get 'house' => 'home#house_list_render'
+
   get 'alabama' => 'home#alabama'
   get 'alaska' => 'home#alaska'
   get 'arkansas' => 'home#arkansas'

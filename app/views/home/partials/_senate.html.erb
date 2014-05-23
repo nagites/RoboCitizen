@@ -1,13 +1,14 @@
-<h4 style="text-decoration:underline">Alabama Legislators</h4>
-<% @alabama_arr.each do |pol| %>
+<%= button_to 'See Congresspeople', house_path, class: 'btn btn-primary pull-right', method: 'get' %>
+<h2 style="text-decoration:underline">Senators</h2>
+
+<% senate_leg_arr.each do |pol| %>
 <ul>
 	<h5><li><%= "#{pol.first_name} #{pol.last_name} (#{pol.party} - #{pol.chamber.capitalize})" %></li></h5>
 	<% if pol.twitter_id == nil %>
-	<ul>
-		<% else %>
+		<ul><li>No Twitter Handle</li>
+	<% else %>
 		<ul><li>Twitter Handle: <%= "@#{pol.twitter_id}" %></li>
-			<% end %>
+	<% end %>
 			<li>Phone: <%= "#{pol.phone}" %></li></ul>
 		</ul>
-		<% end %>
-
+<% end %>

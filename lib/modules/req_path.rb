@@ -18,6 +18,8 @@ module ReqPath
     req_path_e = 'Republicans' if req_path == 'Republican'
     req_path_e = 'Male Legislators' if req_path == 'Male'
     req_path_e = 'Female Legislators' if req_path == 'Female'
+    req_path_e = 'Senators' if req_path == 'Senate'
+    req_path_e = 'Congresspeople' if req_path == 'House'
     req_path_e || nil
   end
 
@@ -27,14 +29,13 @@ module ReqPath
 
   def req_path_final
     req_path_frozen = req_path_sanitize
-    if req_path_frozen == 'Democrats'
-      'Democrats'
-    elsif req_path_frozen == 'Republicans'
-      'Republicans'
-    elsif req_path_frozen == 'Male Legislators'
-      'Male Legislators'
-    elsif req_path_frozen == 'Female Legislators'
-      'Female Legislators'
+    case req_path_frozen
+    when 'Democrats' then 'Democrats'
+    when 'Republicans' then 'Republicans'
+    when 'Male Legislators' then 'Male Legislators'
+    when 'Female Legislators' then 'Female Legislators'
+    when 'Senators' then 'Senators'
+    when 'Congresspeople' then 'Congresspeople'
     else
       state_arr = @legislators.select { |var| var.state_name == "#{req_path_frozen}" }
       state_arr.first.state_name

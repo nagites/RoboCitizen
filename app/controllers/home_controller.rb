@@ -5,13 +5,16 @@ class HomeController < ApplicationController
   include ReqPath
   include FindByGenderModule
   include FindByPartyModule
+  include FindByChamberModule
   include RenderPartialModule
   include StatePartialsModule
   include GenderListModule
   include PartyListModule
+  include ChamberListModule
 
   before_action :setup # from SunlightSetup module
-  helper_method :req_path_final, :male_leg_arr, :female_leg_arr, :democrat_arr, :republican_arr
+  helper_method :req_path_final, :male_leg_arr, :female_leg_arr, :democrat_arr, :republican_arr,
+                :house_leg_arr, :senate_leg_arr
   respond_to :html, :js
 
   def index
