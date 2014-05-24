@@ -6,10 +6,29 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'bootstrap-sass'
+gem 'bcrypt'
+gem 'faker'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
 gem 'sunlight-congress', git: 'git://github.com/steveklabnik/sunlight-congress.git'
 gem 'rails_12factor'
 gem 'unicorn'
+gem 'selenium-webdriver', '~> 2.35.1'
+group :development, :test do
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails'
+  gem 'spork', '>= 1.0rc0' 
+  gem 'spork-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork' 
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false 
+  gem 'rb-fsevent', require: false 
+  gem 'growl'
+  gem 'ruby-prof'
+end
 ruby '2.1.1'
