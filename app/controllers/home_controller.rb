@@ -14,9 +14,11 @@ class HomeController < ApplicationController
 
   before_action :setup # from SunlightSetup module
   helper_method :req_path_final, :male_leg_arr, :female_leg_arr, :democrat_arr, :republican_arr,
-                :house_leg_arr, :senate_leg_arr
+  :house_leg_arr, :senate_leg_arr
   respond_to :html, :js
 
+## no controller logic necessary for the following
+=begin
   def index
     # render home/index.html.erb
   end
@@ -32,5 +34,6 @@ class HomeController < ApplicationController
   def legal
     # render home/legal.html.erb
   end
+=end
 
 end

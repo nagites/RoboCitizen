@@ -27,7 +27,7 @@ group :development, :test do
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'cucumber-rails', require: false 
-  gem 'rb-fsevent', require: false 
+  # gem 'rb-fsevent', '0.9.3', require: false 
   gem 'growl'
   gem 'ruby-prof'
 end
